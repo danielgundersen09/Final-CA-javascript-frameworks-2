@@ -4,20 +4,18 @@ import "./sass/style.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
-import { Card } from "./components/cards";
-import { Searchbar } from "./components/searchbar";
+import { AboutContent } from "./components/aboutContent";
 
-class Home extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <div>
         <Navbar />
-        <Searchbar />
-        <Card />
+        <AboutContent />
         <Footer />
       </div>
     );
   }
 }
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+ReactDOM.render(<About />, document.getElementById("root"));
